@@ -1,8 +1,8 @@
-cat > postcss.config.cjs << 'EOF'
+cat > postcss.config.cjs << 'EOF';
 module.exports = {
-  plugins: {
-    tailwindcss: {},
-    autoprefixer: {}
-  }
+	plugins: {
+		tailwindcss: {},
+		autoprefixer: {}
+	}
 };
-EOF
+EOF;
