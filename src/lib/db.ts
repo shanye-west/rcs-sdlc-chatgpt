@@ -20,6 +20,9 @@ const sql = postgres(env.DATABASE_URL, {
   debug: (connection, query, parameters) => {
     console.log('Executing query:', query);
     console.log('With parameters:', parameters);
+  },
+  transform: {
+    undefined: null // Transform undefined to null
   }
 });
 
