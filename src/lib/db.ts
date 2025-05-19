@@ -1,5 +1,3 @@
-mkdir -p src/lib
-cat > src/lib/db.ts << 'EOF'
 import { drizzle } from 'drizzle-orm/postgres-js';
 import postgres from 'postgres';
 
@@ -10,4 +8,3 @@ const sql = postgres(process.env.DATABASE_URL!, {
 
 // Export the Drizzle instance
 export const db = drizzle(sql);
-EOF
